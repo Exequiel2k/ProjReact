@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.containerTotal{
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('../src/assets/img_trail.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+
+}
+.imgTrail{ 
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+background-attachment: fixed;
+height: 700px;
+
+}
+
+
+.imgTrail p{
+    
+    font-size: 40px;
+    color: rgb(14, 9, 9);
+    margin-top: 200px;
+    margin-left: 200px;
+    font-family:'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.btnTrail{
+    margin-top: 100px;
+    margin-left: 600px;
+}
+
+.animate__backInLeft{
+    animation-duration: 2s;
+}
