@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="container">
         <div className="Nabvar">
             <div className="img">
-                <a href="#">
+                <a href="/">
                     <img src={logo} width="50" height="50" alt="" />
                     <h1>RUNNING</h1>
                 </a>
@@ -15,7 +15,7 @@ const Navbar = () => {
                 <ul>
                     <li><a href="">Inicio</a></li>
                     <li><a href="">Sobre Nosotros</a></li>
-                    <li className="product"><a  href="">Productos </a> 
+                    <li className="product"><a  href="/productos">Productos </a> 
                         <ul className="subMenu">
                             <li><a href=''>Zapatillas de Trail</a></li>
                             <li><a href=''>Zapatillas de Calle</a></li>
@@ -23,7 +23,7 @@ const Navbar = () => {
                             <li><a href=''>Accesorios</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contacto">Contacto</a></li>
                 </ul>
 
                 <CardWidget/>
