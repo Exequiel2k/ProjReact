@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 10%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem;
+    float: left;
+    height: 450px;
+    
+
+      h3{
+        color: white;
+        text-align: center;
+        text-decoration: none;
+      }
+      p{
+        color:white;
+        text-align: center;
+      }
+      img{
+        width: 150px;
+        margin-left:20px;
+      }
+      p:last-child{
+        font-size: 30px;
+      }
+      
+    
+  }
+.btnCard{
+  margin-left: 27px;
+}
+
+

@@ -1,6 +1,7 @@
 import styles from "./Navbar.scss"
 import logo from "../../assets/logo.png"
 import CardWidget from "../CardWidget"
+import { Link } from "react-router-dom"
 const Navbar = () => {
   return (
     <div className="container">
@@ -11,13 +12,18 @@ const Navbar = () => {
                     <h1>RUNNING</h1>
                 </a>
             </div>
-            <div className="Link">
+            <div className="Links">
                 <ul>
-                    <li><a href="">Inicio</a></li>
+                    <li><a href="/inicio">Inicio</a></li>
                     <li><a href="">Sobre Nosotros</a></li>
                     <li className="product"><a  href="/productos">Productos </a> 
                         <ul className="subMenu">
-                            <li><a href=''>Zapatillas de Trail</a></li>
+                            <li>
+                                <Link>
+                                Zapatillas de Trail
+                                </Link>
+                            </li>
+                                
                             <li><a href=''>Zapatillas de Calle</a></li>
                             <li><a href=''>Zapatillas de pista</a></li>
                             <li><a href=''>Accesorios</a></li>

@@ -1,13 +1,24 @@
-import Card from "../Card";
+import { useEffect, useState } from "react"
+import Card from "../Card"
 
-const ListItem = ({productos}) => {
+
+
+const ListItem = () => {
+  const [productos, setProductos] = useState([])
+
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/products")
+      .then((response) => response.json())
+      .then((data)=>{
+        setProductos(data)
+      })
+  }, [])
   return (
-    <div>
+    <div >
        {productos.map((producto)=>{
-         <Card key={producto.id} producto={producto} />
-         
+        return <Card key={producto.id} producto={producto} />
+
        })}
-      
     </div>
   )
 }
