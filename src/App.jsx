@@ -6,6 +6,8 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Productos from './components/Productos';
 import Contacto from './components/Contacto';
+import CardDetail from './components/CardDetail';
+import Card from './components/Card';
 // import { useEffect, useState } from 'react';
 
 
@@ -28,6 +30,7 @@ function App() {
           <Route path="/productos" element ={<Productos />}/>
           <Route path="/" element ={<Navigate to="/inicio" />}/>
           <Route path="/contacto" element ={<Contacto />}/>
+          <Route path='/productos/:id' element={<CardDetail/>}/>
       </Routes> 
   </div>
        

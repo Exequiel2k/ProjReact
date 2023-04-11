@@ -14,9 +14,13 @@ const Navbar = () => {
             </div>
             <div className="Links">
                 <ul>
-                    <li><a href="/inicio">Inicio</a></li>
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <li className="product"><a  href="/productos">Productos </a> 
+                    <li>
+                        <Link to={'/inicio'}>Inicio</Link>
+                    </li>
+                    <li>
+                        <Link to={'/sobreNosotros'}>Sobre Nosotros</Link>
+                    </li>
+                    <li className="product"><Link to={'/productos'}>Productos</Link>
                         <ul className="subMenu">
                             <li>
                                 <Link>
@@ -24,12 +28,26 @@ const Navbar = () => {
                                 </Link>
                             </li>
                                 
-                            <li><a href=''>Zapatillas de Calle</a></li>
-                            <li><a href=''>Zapatillas de pista</a></li>
-                            <li><a href=''>Accesorios</a></li>
+                            <li>
+                                <Link>
+                                Zapatillas de Calle
+                                </Link>
+                  </li>
+                            <li>
+                                <Link>
+                                Zapatillas de pista
+                                </Link>
+
+                                </li>
+                            <li>
+                                <Link>
+                                Accesorios
+                                </Link>
+
+                                </li>
                         </ul>
                     </li>
-                    <li><a href="contacto">Contacto</a></li>
+                    <li><Link to={'/contacto'}>Contacto</Link></li>
                 </ul>
 
                 <CardWidget/>

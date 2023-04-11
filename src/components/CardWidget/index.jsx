@@ -3,8 +3,8 @@ import styles from './CardWidget.scss'
 
 const CardWidget = () => {
   return (
-    <div className="CarritoCompras">
-        <img className='carrito'src={carrito} width="40" height="40" alt="" />
+    <div className={styles.CarritoCompras}>
+        <img className={styles.carrito}src={carrito} width="40" height="40" alt="" />
         <h1 className="NumberCarrito">1</h1>
     </div>
   )
